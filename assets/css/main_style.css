@@ -152,11 +152,15 @@ header.transparent #headernav ul li a:hover {
     list-style: none;
     padding-left: 0;
     margin-top: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .mobile-menu.show {
-    display: block;
+    display: flex;
+    /* or grid */
 }
+
+
 
 .mobile-menu li {
     margin: 10px 0;
@@ -177,6 +181,11 @@ header.transparent #headernav ul li a:hover {
     border: none;
 }
 
+.toggle-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
 
 @media (max-width: 768px) {
     #main-header {
@@ -187,8 +196,6 @@ header.transparent #headernav ul li a:hover {
         display: block;
     }
 }
-
-
 .logo {
     display: inline-flex;
     align-items: center;

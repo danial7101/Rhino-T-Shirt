@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("✅ DOMContentLoaded - Script is running!");
     const toggleButton = document.getElementById('toggleButton');
     const navUl = document.querySelector('#headernav ul');
     const header = document.querySelector('header');
@@ -8,13 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('nav a[href^="#"]');
     const mobileMenu = document.getElementById('mobileMenu');
 
-    // Toggle mobile nav
     if (toggleButton && mobileMenu) {
         toggleButton.addEventListener('click', () => {
+            console.log("Hamburger clicked");
             mobileMenu.classList.toggle('show');
         });
+    } else {
+        console.warn('toggleButton or mobileMenu not found in the DOM');
     }
-
     // Smooth scroll
     links.forEach(link => {
         link.addEventListener('click', event => {
@@ -27,6 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     top: target.offsetTop,
                     behavior: 'smooth'
                 });
+
+                // ✅ Close mobile menu after clicking
+                if (mobileMenu.classList.contains('show')) {
+                    mobileMenu.classList.remove('show');
+                }
             }
         });
     });
