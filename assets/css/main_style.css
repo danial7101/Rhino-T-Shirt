@@ -118,9 +118,9 @@ header.transparent #headernav ul li a:hover {
 }
 
 .mobile-nav {
-    background-color: #000;
+    background-color: #ffffff;
     padding: 10px 20px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .mobile-nav-top {
@@ -132,7 +132,7 @@ header.transparent #headernav ul li a:hover {
 .mobile-nav .brand {
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
 }
@@ -163,7 +163,7 @@ header.transparent #headernav ul li a:hover {
 }
 
 .mobile-menu a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -171,7 +171,7 @@ header.transparent #headernav ul li a:hover {
 .toggle-btn {
     font-size: 2rem;
     cursor: pointer;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 5px 10px;
     background: none;
     border: none;

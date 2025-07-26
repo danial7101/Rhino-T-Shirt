@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     const scrollContainer = document.getElementById('scrollContainer');
-    let scrollSpeed = 5; // Adjust speed here
+    let scrollSpeed = 1; // Adjust speed here
 
     function autoScroll() {
         scrollContainer.scrollLeft += scrollSpeed;
